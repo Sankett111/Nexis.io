@@ -19,7 +19,7 @@ async function Header() {
         <div className="flex gap-4">
             {user ? <LogOutButton/>:(
                 <><Button asChild>
-                    <Link href="/sign-up" className="hidden sm:block">SignUp</Link>
+                    <Link href="/signup" className="hidden sm:block">SignUp</Link>
                     </Button>
                     <Button asChild variant="outline">
                     <Link href="/login">Login</Link>
