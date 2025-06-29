@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/sonner"
 import Header from "@/components/ui/ui/Header"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import AppSidebar from "@/components/ui/AppSidebar"
+import NoteProvider from "@/providers/NoteProvide"
 export const metadata: Metadata = {
   title: "Nexis.io",
 };
@@ -23,6 +24,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           > 
+          <NoteProvider>
           <SidebarProvider>
             <AppSidebar/>
           <div className="flex min-h-screen w-full flex-col">
@@ -31,6 +33,7 @@ export default function RootLayout({
             </main>
             </div></SidebarProvider>
                <Toaster />
+               </NoteProvider>
           </ThemeProvider>
       </body>
     </html>
