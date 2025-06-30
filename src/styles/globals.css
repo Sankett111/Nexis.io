@@ -192,3 +192,14 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 20%; }
+  100% { background-position: 0% 50%; }
+}
+
+.background-animate {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite ;
+}
