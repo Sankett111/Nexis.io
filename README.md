@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+ # Nexis.io
 
-First, run the development server:
+Nexis.io is a modern AI-powered note-taking app built with Next.js, shadcn/ui, and Supabase. It allows users to create, manage, and enhance their notes using advanced AI capabilities like summarization, rewriting, and translation.
+
+## ✨Features
+- User authentication (Supabase Auth)
+- Create, edit, and delete notes
+- AI-powered actions:
+   
+    ~ Summarize notes
+   
+    ~ Rephrase content
+   
+    ~ Translate notes
+
+- Beautiful, responsive UI with shadcn/ui
+  
+- Dark mode support
+  
+- Secure cloud storage with Supabase
+
+## Tech Stack
+
+| Technology      | Description                |
+|-----------------|----------------------------|
+| **Next.js**     | React framework for the web |
+| **shadcn/ui**   | Modern, accessible UI components |
+| **Supabase**    | Auth & database (PostgreSQL) |
+| **OpenAI API**  | AI features (summarization, etc.) |
+| **Tailwind CSS**| Utility-first styling |
+| **Vercel**      | Deployment & hosting |
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/Nexis.io.git
+cd Nexis.io 
+```
+### 2. Install Dependencies
+
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Configure Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+Copy .env.example → .env.local and fill in:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+.env
+Copy Edit
+DATABASE_URL=your_database_url
+DIRECT_URL=your_direct_url
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+OPENAI_API_KEY=your_openai_api_key
+```
+### 4. Run the Dev Server
+```bash 
+Copy 
+Edit
+npm run dev
+```
+### 5. Open
 
-## Learn More
+ http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+### Try Nexis at 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://nexis-io.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+[MIT](https://choosealicense.com/licenses/mit/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
+
+
