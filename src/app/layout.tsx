@@ -6,6 +6,14 @@ import Header from "@/components/ui/ui/Header"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import AppSidebar from "@/components/ui/AppSidebar"
 import NoteProvider from "@/providers/NoteProvide"
+import { Roboto_Condensed } from "next/font/google"
+
+const roboto = Roboto_Condensed({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["400", "500", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Nexis.io",
 };

@@ -13,9 +13,9 @@ async function Header() {
     <header className="relative flex h-20 w-full items-center justify-between bg-popover px-3 sm:px-8 ">
         <SidebarTrigger className="absolute left-1 top-1" />
         <Link className="flex items-end gap-3" href="/">
-        <Image src="/twitch.svg" alt="Nexis Logo" width={50} height={70}  priority/>
-         <h1 className="flex flex-col pb-4 text-2xl font-semibold leading-6">
-            <span>Nexis</span>
+        
+         <h1 className="mx-4 pb-1 text-4xl font-medium  font-serif ">
+         <span className="text-primary">Nexis</span>
             </h1>
             </Link>
         <div className="flex gap-4">
