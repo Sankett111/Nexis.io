@@ -27,7 +27,7 @@ Nexis.io is a modern AI-powered note-taking app built with Next.js, shadcn/ui, a
 | **Next.js**     | React framework for the web |
 | **shadcn/ui**   | Modern, accessible UI components |
 | **Supabase**    | Auth & database (PostgreSQL) |
-| **OpenAI API**  | AI features (summarization, etc.) |
+| **Gemini API**  | AI features (summarization, etc.) |
 | **Tailwind CSS**| Utility-first styling |
 | **Vercel**      | Deployment & hosting |
 ---
@@ -58,7 +58,7 @@ DIRECT_URL=your_direct_url
 SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
-OPENAI_API_KEY=your_openai_api_key
+GEMINI_API_KEY=your_gemini_api_key
 ```
 ### 4. Run the Dev Server
 ```bash 
