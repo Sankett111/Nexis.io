@@ -30,21 +30,21 @@ startTransition(async () => {
         const loginResult = await loginAction(email, password)
         errorMessage = loginResult?.errorMessage
         title = 'logged in'
-        description = 'You are now logged in'
+        description = 'logged in'
     } else {
         const signupResult = await signupAction(email, password)
         errorMessage = signupResult?.errorMessage
         title = 'signed up'
-        description = 'check your email for the verification link'
+        description = 'check your mail for the verification link'
     }
     if (!errorMessage) {
-        toast.success(title, {
-            description,
+        toast.success(title,{
+            description,style:{background:"green"}
         })
         router.replace('/');
     } else {
         toast.error(errorMessage, {
-           description:errorMessage,
+           description:errorMessage,style:{background:"red"}
         })
     }
 })

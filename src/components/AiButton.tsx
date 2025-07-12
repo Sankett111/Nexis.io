@@ -79,7 +79,7 @@ const handleKeyDown=(e:React.KeyboardEvent<HTMLTextAreaElement>)=>{
   <DialogTrigger asChild>
     <div className="flex items-center justify-center">
     <Sparkles
-  className="rounded-full text-white w-9 h-9 p-2 background-animate [background-image:linear-gradient(to_right,theme(colors.violet.800),theme(colors.indigo.900),theme(colors.fuchsia.800))]"
+  className="rounded-full text-white w-9 h-9 p-2 background-animate bg-gradient-to-r from-fuchsia-700 via-orange-500 to-red-500 ease-in-out"
 /></div>
   </DialogTrigger>
   <DialogContent className="flex h-[85vh] max-w-4xl flex-col overflow-y-auto ref{contentRef}">

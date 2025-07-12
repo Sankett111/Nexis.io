@@ -23,7 +23,11 @@ const [isPending, startTransition] = useTransition()
     startTransition(async () => {
         const {errorMessage}= await deleteNoteAction(noteId)
         if (!errorMessage) {
-            toast.success('Note deleted successfully')
+            toast.success('Note deleted successfully',{
+              style:{
+                background:'red',
+              }
+            })
             deleteNoteLocally(noteId)
             if(noteId === noteIdParam) {
                 router.replace('/')
